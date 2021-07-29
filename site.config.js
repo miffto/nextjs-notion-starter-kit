@@ -8,16 +8,16 @@ module.exports = {
 
   // basic site info (required)
   name: 'もふもふハウス',
-  domain: 'mofmofhouse.site',
+  domain: 'mofmof-house.com',
   author: 'miffto',
 
   // open graph metadata (optional)
-  description: 'Example site description',
-  socialImageTitle: 'mofmofhouse',
+  description: '子育てや日常を漫画で描くHP',
+  socialImageTitle: 'mofmof-house',
   socialImageSubtitle: 'Hello World! 👋',
 
   // social usernames (optional)
-  twitter: 'test',
+  twitter: '',
   github: 'miffto',
   linkedin: '',
 
