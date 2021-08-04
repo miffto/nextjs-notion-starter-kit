@@ -26,15 +26,6 @@ export const Footer: React.FC<{
 
   return (
     <footer className={styles.footer}>
-      // ここ追記したとこ
-      <script src="https://utteranc.es/client.js"
-        repo="miffto / nextjs-notion-starter-kit"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-      </script>
-      //　ここまで
       <div className={styles.copyright}>Copyright 2021 {config.author}</div>
 
       {hasMounted ? (
