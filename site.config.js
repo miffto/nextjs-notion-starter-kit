@@ -12,9 +12,9 @@ module.exports = {
   author: 'miffto',
 
   // open graph metadata (optional)
-  description: '子育てや日常を漫画で描くHP',
-  socialImageTitle: 'mofmof-house',
-  socialImageSubtitle: 'Hello World! 👋',
+  description: '子育てや日常を漫画で描くnotionブログ',
+  socialImageTitle: 'もふもふハウス',
+  socialImageSubtitle: 'もふもふハウス',
 
   // social usernames (optional)
   twitter: '',
