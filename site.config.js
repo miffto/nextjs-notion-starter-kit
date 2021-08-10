@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'もふもふハウス',
-  domain: 'mofmof-house.com',
+  domain: 'notionblog-eight.vercel.app',
   author: 'miffto',
 
   // open graph metadata (optional)
@@ -32,7 +32,7 @@ module.exports = {
   imageCDNHost: null,
 
   // Utteranc.es comments via GitHub issue comments (optional)
-  utterancesGitHubRepo: 'miffto / nextjs-notion-starter-kit',
+  utterancesGitHubRepo: 'miffto/nextjs-notion-starter-kit',
 
   // whether or not to enable support for LQIP preview images (optional)
   // NOTE: this requires you to set up Google Firebase and add the environment
