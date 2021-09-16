@@ -47,6 +47,7 @@ if (typeof window !== 'undefined') {
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
+  console.log("3333333333333333")
 
   React.useEffect(() => {
     // GA_TRACKING_ID が設定されていない場合は、処理終了
@@ -55,7 +56,7 @@ export default function App({ Component, pageProps }) {
       return;
     };
     const handleRouteChange = (url: string) => {
-      console.log("hueeeeeeeeeeeeeeeee");
+      console.log("2222222222222222");
       pageview(url);
     };
     router.events.on('routeChangeComplete', handleRouteChange);
