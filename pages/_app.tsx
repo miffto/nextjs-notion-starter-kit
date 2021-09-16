@@ -55,6 +55,7 @@ export default function App({ Component, pageProps }) {
       return;
     };
     const handleRouteChange = (url: string) => {
+      console.log("hueeeeeeeeeeeeeeeee");
       pageview(url);
     };
     router.events.on('routeChangeComplete', handleRouteChange);

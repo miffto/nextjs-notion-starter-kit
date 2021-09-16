@@ -175,7 +175,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       <Head>
       　{/*
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207738457-1"></script>
+        <s  cript async src="https://www.googletagmanager.com/gtag/js?id=UA-207738457-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -191,13 +191,12 @@ export const NotionPage: React.FC<types.PageProps> = ({
             <script
               dangerouslySetInnerHTML={{
                 __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_TRACKING_ID}', {
-            page_path: window.location.pathname,
-          });
-        `,
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_TRACKING_ID}', {
+                  page_path: window.location.pathname,
+                });`,
               }}
             />
           </>
