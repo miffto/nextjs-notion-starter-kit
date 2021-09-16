@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'もふもふハウス',
-  domain: 'notionblog-eight.vercel.app',
+  domain: 'mofmof-house.com',
   author: 'miffto',
 
   // open graph metadata (optional)
