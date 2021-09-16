@@ -48,6 +48,17 @@ export default function App({ Component, pageProps }) {
   const router = useRouter()
 
   React.useEffect(() => {
+    // GA_TRACKING_ID が設定されていない場合は、処理終了
+    if (!GA_TRACKING_ID) return;
+      const handleRouteChange = (url: string) => {
+        pageview(url);
+      };
+      router.events.on('routeChangeComplete', handleRouteChange);
+      return () => {
+        router.events.off('routeChangeComplete', handleRouteChange);
+      };
+    }, [router.events]);
+    /*
     if (fathomId) {
       Fathom.load(fathomId, fathomConfig)
 
@@ -61,7 +72,7 @@ export default function App({ Component, pageProps }) {
         router.events.off('routeChangeComplete', onRouteChangeComplete)
       }
     }
-  }, [])
+  }, [])*/
 
   return <Component {...pageProps} />
 }
