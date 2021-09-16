@@ -171,6 +171,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       <PageHead site={site} />
 
       <Head>
+      　{/*
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207738457-1"></script>
         <script>
@@ -179,7 +180,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         gtag('js', new Date());
 
         gtag('config', 'UA-207738457-1');
-        </script>
+        </script> */}
 
         <meta property='og:title' content={title} />
         <meta property='og:site_name' content={site.name} />
