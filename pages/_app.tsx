@@ -39,6 +39,7 @@ import { useRouter } from 'next/router'
 import { bootstrap } from 'lib/bootstrap-client'
 import { fathomId, fathomConfig } from 'lib/config'
 import * as Fathom from 'fathom-client'
+import { GA_TRACKING_ID } from 'lib/gtag';
 
 if (typeof window !== 'undefined') {
   bootstrap()
