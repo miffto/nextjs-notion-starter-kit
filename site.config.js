@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'もふもふハウス',
-  domain: 'mofmof-house.com',
+  domain: '',
   author: 'miffto',
 
   // open graph metadata (optional)
