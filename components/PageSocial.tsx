@@ -3,7 +3,10 @@ import cs from 'classnames'
 
 import * as config from 'lib/config'
 
+import { SocialLinks } from './SocialLinks'
+
 import styles from './PageSocial.module.css'
+import { SocialShare } from './SocialShare'
 
 interface SocialLink {
   name: string
