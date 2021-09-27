@@ -17,6 +17,7 @@ html {
 
 body {
   overflow-x: hidden;
+  width: 1000px;
 }
 
 .utterances {
@@ -44,4 +45,3 @@ body {
     text-align: center;
     color: var(--fg-color);
 }
-
