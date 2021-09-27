@@ -170,7 +170,7 @@
 
 .notion-collection-row-property .notion-property {
   display: flex;
-  /*justify-content: center;*/
+  justify-content: center;
 }
 
 .notion-collection-row-value {
@@ -320,6 +320,9 @@
 .notion-page-icon-wrapper img.notion-page-icon {
   border-radius: 50%;
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
+}
+.notion-page-icon-wrapper {
+  justify-content: start;
 }
 
 .notion-header {
