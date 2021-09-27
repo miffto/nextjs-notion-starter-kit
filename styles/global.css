@@ -11,6 +11,7 @@ body,
 html {
   padding: 0;
   margin: 0;
+  text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -18,6 +19,9 @@ html {
 body {
   overflow-x: hidden;
   width: 1000px;
+  margin:0px;          /* ページ全体のmargin */
+  padding:0px;         /* ページ全体のpadding */
+  text-align:center;   /* 下記のautoに未対応用のセンタリング */
 }
 
 .utterances {
