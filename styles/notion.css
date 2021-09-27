@@ -188,8 +188,8 @@
   /* border-radius: 24px; */
   width: 1000px;
   height: auto;
-  min-height: 30vh;
-  min-height: 100vh;
+  min-height: auto;
+  min-height: auto;
   object-fit: cover;
   display: block;
   margin: 0 auto;
