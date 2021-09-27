@@ -23,8 +23,12 @@
   line-height: 1.65;
 }
 
+.notion-page-scroller {
+  margin: 0 auto;
+}
+
 .index-page {
-  --notion-max-width: 900px;
+  --notion-max-width: 100%;
 }
 
 .notion-text {
@@ -118,8 +122,35 @@
   margin-bottom: 0.25em;
 }
 
+.notion-callout .notion-page-icon {
+    position: absolute;
+    top: -10px;
+    left: -120px;
+    max-width: 100px;
+    width: 100px;
+    max-height: 100px;
+    height: 100px;
+}
+
 .notion-callout {
-  margin: 0.75em 0;
+    margin: 0.75em 0;
+    position: relative;
+    margin-left: 120px;
+    min-height: 100px;
+    width: calc(100% - 120px) !important;
+    border: none;
+    border-radius: 10px;
+    background-color: #e0edff;
+}
+
+.notion-callout:before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
 }
 
 .notion-hr {
@@ -186,20 +217,12 @@
 .notion-page-cover {
   /* max-width: 1200px; */
   /* border-radius: 24px; */
-  width: 1000px;
+  width: 100%;
   height: auto;
-  min-height: auto;
-  max-height: auto;
   object-fit: cover;
   display: block;
   margin: 0 auto;
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
-}
-
-@media only screen and (max-width: 1200px) {
-  .notion-page-cover {
-    border-radius: 0;
-  }
 }
 
 .notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-page-link {
@@ -332,7 +355,7 @@
 /* if you don't want rounded page images, remove this */
 .notion-page-icon-wrapper img.notion-page-icon {
   border-radius: 50%;
-  box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
+  /*box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);*/
 }
 .notion-page-icon-wrapper {
   justify-content: start;
