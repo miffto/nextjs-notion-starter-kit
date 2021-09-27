@@ -170,7 +170,7 @@
 
 .notion-collection-row-property .notion-property {
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 .notion-collection-row-value {
