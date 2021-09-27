@@ -189,7 +189,7 @@
   width: 1000px;
   height: auto;
   min-height: auto;
-  min-height: auto;
+  max-height: auto;
   object-fit: cover;
   display: block;
   margin: 0 auto;
