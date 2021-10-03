@@ -8,13 +8,21 @@
  */
 
 .notion {
-  --notion-max-width: 720px;
+  --notion-max-width: 800px;
   --notion-header-height: 54px;
 }
 
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
+}
+
+.notion-page-scroller {
+  word-break: break-word;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
 }
 
 .index-page {
@@ -41,6 +49,7 @@
 
 .notion-gallery-grid {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: auto;
 }
 
 .notion-gallery-grid .notion-page-icon {
@@ -48,7 +57,7 @@
 }
 
 .notion-gallery-grid .notion-page-title-text {
-  font-size: 2em;
+  font-size: 20px;
   white-space: unset;
 }
 
