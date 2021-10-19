@@ -11,7 +11,7 @@ import { PageBlock } from 'notion-types'
 
 import { Tweet, TwitterContextProvider } from 'react-static-tweets'
 
-import { GA_TRACKING_ID } from 'lib/gtag';
+//import { GA_TRACKING_ID } from 'lib/gtag';
 
 // core notion renderer
 import { NotionRenderer, Code, Collection, CollectionRow } from 'react-notion-x'
@@ -173,35 +173,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       <PageHead site={site} />
 
       <Head>
-      　{/*
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <s  cript async src="https://www.googletagmanager.com/gtag/js?id=UA-207738457-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-207738457-1');
-        </script> */}
-
-        // GA_TRACKING_ID が設定されていない場合は、なし
-        {GA_TRACKING_ID && (
-          <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_TRACKING_ID}', {
-                  page_path: window.location.pathname,
-                });`,
-              }}
-            />
-          </>
-        )}
-
+        //gtagについて記載してたが削除
         <meta property='og:title' content={title} />
         <meta property='og:site_name' content={site.name} />
 
