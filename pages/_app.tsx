@@ -43,6 +43,7 @@ import { GA_TRACKING_ID, pageview } from 'lib/gtag';
 
 if (typeof window !== 'undefined') {
   bootstrap()
+  console.log("uho iiotoko")
 }
 
 export default function App({ Component, pageProps }) {
