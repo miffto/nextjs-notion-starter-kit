@@ -39,33 +39,15 @@ import { useRouter } from 'next/router'
 import { bootstrap } from 'lib/bootstrap-client'
 import { fathomId, fathomConfig } from 'lib/config'
 import * as Fathom from 'fathom-client'
-import { GA_TRACKING_ID, pageview } from 'lib/gtag';
 
 if (typeof window !== 'undefined') {
   bootstrap()
-  console.log("uho iiotoko")
 }
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
-  console.log("3333333333333333")
 
   React.useEffect(() => {
-    // GA_TRACKING_ID が設定されていない場合は、処理終了
-    if (!GA_TRACKING_ID){
-      console.log("hueeeeeeeeeeeeeeeee");
-      return;
-    };
-    const handleRouteChange = (url: string) => {
-      console.log("2222222222222222");
-      pageview(url);
-    };
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
-    /*
     if (fathomId) {
       Fathom.load(fathomId, fathomConfig)
 
@@ -79,7 +61,7 @@ export default function App({ Component, pageProps }) {
         router.events.off('routeChangeComplete', onRouteChangeComplete)
       }
     }
-  }, [])*/
+  }, [])
 
   return <Component {...pageProps} />
 }
