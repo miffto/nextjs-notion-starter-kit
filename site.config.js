@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'もふもふハウス',
-  domain: 'miffto-notionblog.com',
+  domain: 'mofmof-house.com',
   author: 'miffto',
 
   // open graph metadata (optional)
