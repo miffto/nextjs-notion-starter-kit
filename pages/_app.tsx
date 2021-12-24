@@ -39,6 +39,10 @@ import { useRouter } from 'next/router'
 import { bootstrap } from 'lib/bootstrap-client'
 import { fathomId, fathomConfig } from 'lib/config'
 import * as Fathom from 'fathom-client'
+import * as gtag from '../lib/gtag'
+import Router from 'next/router'
+
+Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 
 if (typeof window !== 'undefined') {
   bootstrap()
