@@ -17,7 +17,7 @@ module.exports = {
   socialImageSubtitle: 'もふもふハウス',
 
   // social usernames (optional)
-  twitter: '',
+  twitter: 'moftaro3',
   github: 'miffto',
   linkedin: '',
 
